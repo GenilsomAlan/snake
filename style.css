@@ -40,3 +40,47 @@ header{
 	align-items: center;
 	background-color: #FFC300;	
 }
+#buttons{
+	display: none;
+}
+@media only screen and (max-width: 980px){
+	p{
+		font-size: 35px;
+	}
+	h1{
+		font-size: 40px;
+	}
+	#buttons{
+		display: block;
+		width: 100%;
+		height: 200px;
+		margin-top: 20px;
+		position: absolute;
+	}
+	.div1{
+		width: 220px;
+		height: 60px;
+		display: flex;
+		margin-left: 20px;
+		float: left;
+		margin-top: 90px;
+		column-gap: 5px;
+	}
+	.div{
+		width: 60px;
+		height: 110px;
+		margin-top: 60px;
+		float: right;
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: 20px;
+	}
+	button{
+		width: 80px;
+		height: 80px;
+		font-size: 50px;
+	}
+	#display{
+		width: 250px;
+	}
+}
