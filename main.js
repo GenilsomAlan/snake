@@ -135,37 +135,3 @@ printGameOver=()=>{
 	context.font = "23px arial"
 	context.fillText("pontuaçâo: " + score, 120, 250)
 }
-///mobile
-const arrowLeftButton = document.querySelector('#arrowLeft')
-const arrowRigthButton = document.querySelector('#arrowRigth')
-const arrowTopButton = document.querySelector('#arrowTop')
-const arrowBottomButton = document.querySelector('#arrowBottom')
-
-arrowLeftButton.addEventListener('click',()=>{
-	registerPositions()
-	direction = "left"
-	positionX -= 10
-	clear()
-	snakeBody()	
-})
-arrowRigthButton.addEventListener('click',()=>{
-	registerPositions()
-	direction = "right"
-	positionX += 10
-	clear()
-	snakeBody()
-})
-arrowTopButton.addEventListener('click',()=>{
-	registerPositions()
-	direction = "up"
-	positionY -= 10
-	clear()
-	snakeBody()	
-})
-arrowBottomButton.addEventListener('click',()=>{
-	registerPositions()
-	direction = "down"
-	positionY += 10
-	clear()
-	snakeBody()	
-})
